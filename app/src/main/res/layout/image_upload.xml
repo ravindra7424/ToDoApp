@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadImage">
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Button for uploading image-->
+        <Button
+            android:id="@+id/btnChoose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Choose" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:text="Upload"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/firebaseimage"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_below="@+id/layout_button"
+        android:layout_margin="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp" />
+</RelativeLayout>
