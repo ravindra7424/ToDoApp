@@ -68,4 +68,30 @@
             android:layout_marginTop="12dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ImageView
+        android:id="@+id/firebaseimage"
+        android:layout_width="229dp"
+        android:layout_height="154dp"
+        android:layout_below="@id/layout_button"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="200dp" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cardview_default_elevation"
+        android:layout_marginTop="230dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:text="Choose" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_weight="1"
+        android:text="Upload" />
+
 </com.google.android.material.card.MaterialCardView>

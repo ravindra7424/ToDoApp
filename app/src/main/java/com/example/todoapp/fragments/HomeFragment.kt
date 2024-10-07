@@ -48,7 +48,7 @@ class HomeFragment : Fragment(), DialogNextListener, ToDoAdapter.ToDoAdapterInte
         }
 
     private fun getData() {
-        dataref.addValueEventListener(object:ValueEventListener{
+        dataref.child("tasks").addValueEventListener(object:ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 ToDoList.clear()
                 for(task in snapshot.children){
@@ -101,7 +101,7 @@ class HomeFragment : Fragment(), DialogNextListener, ToDoAdapter.ToDoAdapterInte
     }
 
     override fun OnSaveTask(todoTask: String, todotext: TextInputEditText) {
-        dataref.push().setValue(todoTask).addOnCompleteListener {
+        dataref.child("tasks").push().setValue(todoTask).addOnCompleteListener {
             if (it.isSuccessful) {
                     Toast.makeText(context, "$todoTask", Toast.LENGTH_SHORT).show()
                     todotext.text = null
