@@ -56,15 +56,12 @@ dependencies {
 
     implementation ("com.github.bumptech.glide:glide:4.15.1")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
-
-
     implementation ("androidx.fragment:fragment-ktx:1.6.1" )
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.3")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.3")
     implementation("androidx.fragment:fragment:1.5.0")
     implementation("androidx.navigation:navigation-fragment:2.5.0")
     implementation("androidx.navigation:navigation-ui:2.5.0")
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
